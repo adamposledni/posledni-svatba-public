@@ -27,9 +27,11 @@
 <body class="bg-beige" data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
-        <a href="#home" class="navbar-brand d-block d-lg-none">
-            <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
-        </a>
+        <div class="navbar-nav py-0">
+            <a href="#home" class="navbar-brand d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
+            </a>
+        </div>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,8 +40,8 @@
                 <a href="./de" class="nav-item nav-link">DE</a>
             </div>
             <div class="navbar-nav ml-auto py-0">
-                <a href="#about" class="nav-item nav-link">O nás</a>
-                <a href="#story" class="nav-item nav-link">Náš příběh</a>
+                <a href="#about" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">O nás</a>
+                <a href="#story" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Náš příběh</a>
             </div>
             <div class="navbar-nav py-0">
                 <a href="#home" class="navbar-brand mx-5 d-none d-lg-block">
@@ -52,19 +54,21 @@
                       O svatbě
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#obrad">Obřad</a>
-                      <a class="dropdown-item" href="#oslava">Oslava</a>
-                      <a class="dropdown-item" href="#doprava">Doprava</a>
+                      <a class="dropdown-item" href="#obrad" data-toggle="collapse" data-target=".navbar-collapse.show">Obřad</a>
+                      <a class="dropdown-item" href="#oslava" data-toggle="collapse" data-target=".navbar-collapse.show">Oslava</a>
+                      <a class="dropdown-item" href="#doprava" data-toggle="collapse" data-target=".navbar-collapse.show">Doprava</a>
                       <!-- <a class="dropdown-item" href="#harmonogram">Harmonogram</a> -->
-                      <a class="dropdown-item" href="#dresscode">Dress code</a>
-                      <a class="dropdown-item" href="#dary">Svatební dary</a>
+                      <a class="dropdown-item" href="#dresscode" data-toggle="collapse" data-target=".navbar-collapse.show">Dress code</a>
+                      <a class="dropdown-item" href="#dary" data-toggle="collapse" data-target=".navbar-collapse.show">Svatební dary</a>
                       <!-- <a class="dropdown-item" href="#menu">Menu</a> -->
                     </div>
                   </div>
-                <a href="#rsvp" class="nav-item nav-link">Kontakt</a>
+                <a href="#rsvp" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Kontakt</a>
             </div>
             <div class="navbar-nav py-0">
-                <a href="./de" class="nav-item nav-link">DE</a>
+                <a href="./de" class="nav-item nav-link">
+                    🌐 DE 
+            </a>
             </div>
         </div>
     </nav>
@@ -97,9 +101,9 @@
             <div class="section-title position-relative text-center">
                 <h1 class="font-secondary display-4">O nás dvou</h1>
             </div>
-            <div class="row m-0 mb-4 mb-md-0 pb-5 pb-md-0">
+            <div class="row m-0 mb-4 mb-lg-0 pb-5 pb-md-0">
                 <div class="col-md-8 p-0 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
+                    <div class="h-100 d-flex flex-column justify-content-center px-md-5">
                         <h3 class="mb-3">Ženich</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                     </div>
@@ -110,7 +114,7 @@
             </div>
             <div class="row m-0">
                 <div class="col-md-8 p-0 text-center text-md-left order-md-1">
-                    <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
+                    <div class="h-100 d-flex flex-column justify-content-center px-md-5">
                         <h3 class="mb-3">Nevěsta</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                     </div>
@@ -205,16 +209,16 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <p class="mb-3 pb-3">
+                    <p>
                         Svatbu jsme se rozhodli uspořádat v užším kruhu rodiny a přátel, v místech, kam nás zavedl nespočet výletů a kde to máme moc rádi. Budeme se moc těšit, když tento jedinečný den v tomto nádherném prostředí strávíte s námi.
                     </p>
                 </div>
             </div>           
             <div id="obrad" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Obřad</h3>
+                <h3 class="my-3">Obřad</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 border-right border-primary">
+                <div class="col-md-6 col-lg-5 border-right border-primary">
                     <div class="text-center">
                         <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
                         <p class="">Skalní věž Lomový masiv, Tisá</p>
@@ -227,18 +231,18 @@
                         <p class="">cca 13:00 (bude upřesněno)</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <iframe class="w-100 h-100" style="border:none" src="https://frame.mapy.cz/s/gureforezo" width="400" height="400" frameborder="0"></iframe>
+                <div class="col-md-6 col-lg-5 text-center mt-3 mt-md-0">
+                    <iframe class="w-100 h-100" style="border:none; min-height: 250px;" src="https://frame.mapy.cz/s/gureforezo" width="400" height="400" frameborder="0"></iframe>
                 </div>
             </div>
             <div id="oslava" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Oslava</h3>
+                <h3 class="my-3">Oslava</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 text-center border-right border-primary">
-                    <iframe class="w-100 h-100" style="border:none" src="https://frame.mapy.cz/s/lefanusoba" width="400" height="400" frameborder="0"></iframe>
+                <div class="col-md-6 col-lg-5 order-3 order-md-1 mt-3 mt-md-0 text-center border-right border-primary">
+                    <iframe class="w-100 h-100" style="border:none; min-height: 250px;" src="https://frame.mapy.cz/s/lefanusoba" width="400" height="400" frameborder="0"></iframe>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-6 col-lg-5 order-2">
                     <div class="text-center">
                         <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
                         <p class="">Country House</p>
@@ -253,39 +257,41 @@
                 </div>
             </div>
             <div id="ubytovani" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Ubytování</h3>
+                <h3 class="my-3">Ubytování</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 p-0 text-center px-5">
-                    <img class="w-100" src="img/ubytovani.jpg" style="object-fit: cover;">
+                <div class="col-lg-4 order-3 order-lg-1 p-0 text-center px-5">
+                    <img class="w-100 h-100" src="img/ubytovani.jpg" style="object-fit: cover;">
                 </div>
-                <div class="col-md-6 p-0 text-center text-md-left">
+                <div class="col-lg-6 order-2 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
                         <p>Místo oslavy je zároveň i naším ubytováním. Objekt jsme si pronajali na celý víkend a všem hostům můžeme nabídnout nocleh od pátečního večera až do nedělního dopoledne. V okolí Tisé jsou nádherná místa, takže se zajisté vyplatí dorazit dříve a udělat si procházku po okolí. Abychom věděli s kým a na jakou dobu máme počítat, dejte nám prosím dole vědět, zda se chystáte možnost ubytování využít.</p>
                     </div>
                 </div>
             </div>
             <div id="doprava" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Doprava</h3>
+                <h3 class="my-3">Doprava</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-6 p-0 text-center text-md-left">
+                <div class="col-lg-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
                         <p>
                             Resort Tisá nabízí pár parkovacích míst přímo před chatou, další velké parkoviště se nachází na louce za objektem. Kdybyste potřebovali pomoct nebo poradit s dopravou na místo, neváhejte se nám ozvat.
-Na místo obřadu se dostaneme společně auty od našeho ubytování. Zaparkujeme v místě vyznačeném na mapě a odtud se vydáme 700 m pěšky lesní cestou na místo obřadu.
+                        </p>
+                        <p>
+                            Na místo obřadu se dostaneme společně auty od našeho ubytování. Zaparkujeme v místě vyznačeném na mapě a odtud se vydáme 700 m pěšky lesní cestou na místo obřadu.
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 px-5 text-center">
-                    <iframe class="w-100 h-100" style="border:none" src="https://frame.mapy.cz/s/kagafarava" width="400" height="400" frameborder="0"></iframe>
+                <div class="col-lg-4 px-5 text-center">
+                    <iframe class="w-100 h-100" style="border:none; min-height: 250px;" src="https://frame.mapy.cz/s/kagafarava" width="400" height="400" frameborder="0"></iframe>
                 </div>
             </div>
             <div id="dresscode" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Dress code</h3>
+                <h3 class="my-3">Dress code</h3>
             </div>
             <div id="dary" class="container-fluid text-center pt-5">
-                <h3 class="mb-3">Svatební dary</h3>
+                <h3 class="my-3">Svatební dary</h3>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
