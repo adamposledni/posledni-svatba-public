@@ -24,7 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body class="bg-beige" data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
         <a href="#home" class="navbar-brand d-block d-lg-none">
@@ -33,14 +33,19 @@
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="collapse navbar-collapse justify-content-between pt-3 pt-lg-0" id="navbarCollapse">
+            <div class="navbar-nav py-0 d-none d-lg-block invisible">
+                <a href="./de" class="nav-item nav-link">DE</a>
+            </div>
             <div class="navbar-nav ml-auto py-0">
                 <a href="#about" class="nav-item nav-link">O nás</a>
                 <a href="#story" class="nav-item nav-link">Náš příběh</a>
             </div>
-            <a href="#home" class="navbar-brand mx-5 d-none d-lg-block">
-                <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
-            </a>
+            <div class="navbar-nav py-0">
+                <a href="#home" class="navbar-brand mx-5 d-none d-lg-block">
+                    <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
+                </a>
+            </div>
             <div class="navbar-nav mr-auto py-0">
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,6 +62,9 @@
                     </div>
                   </div>
                 <a href="#rsvp" class="nav-item nav-link">Kontakt</a>
+            </div>
+            <div class="navbar-nav py-0">
+                <a href="./de" class="nav-item nav-link">DE</a>
             </div>
         </div>
     </nav>
@@ -85,30 +93,30 @@
 
     <!-- About Start -->
     <div class="container-fluid py-5 bg-beige" id="about">
-        <div class="container py-5">
+        <div class="container">
             <div class="section-title position-relative text-center">
                 <h1 class="font-secondary display-4">O nás dvou</h1>
             </div>
-            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+            <div class="row m-0 mb-4 mb-md-0 pb-5 pb-md-0">
                 <div class="col-md-8 p-0 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <h3 class="mb-3">The Groom</h3>
+                    <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
+                        <h3 class="mb-3">Ženich</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                     </div>
                 </div>
-                <div class="col-md-4 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100 rounded-circle" src="img/about-1.jpg" style="object-fit: cover;">
+                <div class="col-md-4 p-0 text-center">
+                    <img class="rounded-circle w-75" src="img/story-2.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="row m-0">
                 <div class="col-md-8 p-0 text-center text-md-left order-md-1">
-                    <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <h3 class="mb-3">The Bride</h3>
+                    <div class="h-100 d-flex flex-column justify-content-center px-5 pb-3">
+                        <h3 class="mb-3">Nevěsta</h3>
                         <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
                     </div>
                 </div>
-                <div class="col-md-4 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100 rounded-circle" src="img/about-2.jpg" style="object-fit: cover;">
+                <div class="col-md-4 p-0 text-center">
+                    <img class="rounded-circle w-75" src="img/story-2.jpg" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -118,11 +126,9 @@
 
     <!-- Story Start -->
     <div class="container-fluid py-5" id="story">
-        <div class="container pt-5 pb-3">
+        <div class="container">
             <div class="section-title position-relative text-center">
-                <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6> -->
-                <h1 class="font-secondary display-4">Náš</h1>
-                <i class="far fa-heart text-dark"></i>
+                <h1 class="font-secondary display-4">Náš příběh</h1>
             </div>
             <div class="container timeline position-relative p-0">
                 <div class="row">
@@ -179,62 +185,11 @@
     <!-- Story End -->
 
 
-    <!-- Gallery Start -->
-    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
-            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
-            <i class="far fa-heart text-white"></i>
-        </div>
-        <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery End -->
-
-
     <!-- Event Start -->
     <div class="container-fluid py-5" id="event">
-        <div class="container py-5">
+        <div class="container">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
-                <h1 class="font-secondary display-4">Our Wedding Event</h1>
-                <i class="far fa-heart text-dark"></i>
+                <h1 class="font-secondary display-4">O svatbě</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
@@ -265,12 +220,10 @@
 
 
     <!-- Friends & Family Start -->
-    <div class="container-fluid py-5" id="family">
+    <!-- <div class="container-fluid py-5" id="family">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
                 <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
-                <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -373,17 +326,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Friends & Family End -->
 
 
     <!-- RSVP Start -->
     <div class="container-fluid py-5" id="rsvp">
-        <div class="container py-5">
+        <div class="container">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
-                <h1 class="font-secondary display-4">Join Our Party</h1>
-                <i class="far fa-heart text-dark"></i>
+                <h1 class="font-secondary display-4">Napište nám</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -452,7 +403,7 @@
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->
