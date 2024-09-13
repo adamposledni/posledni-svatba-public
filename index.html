@@ -1,118 +1,147 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="utf-8" />
-        <title>Poslední svatba</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon" />
+<head>
+    <meta charset="utf-8" />
+    <title>Poslední svatba</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;600&display=swap"
+        rel="stylesheet" />
 
-        <!-- Libraries Stylesheet -->
-        <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
-        <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
-    <body class="bg-beige" data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Navbar Start -->
-        <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-beige" data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <div class="navbar-nav py-0">
+            <a href="#home" class="navbar-brand d-block d-lg-none" data-toggle="collapse"
+                data-target=".navbar-collapse.show">
+                <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
+            </a>
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between pt-3 pt-lg-0" id="navbarCollapse">
+            <div class="navbar-nav py-0 d-none d-lg-block invisible">
+                <a href="./de" class="nav-item nav-link">DE</a>
+            </div>
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#about" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">O
+                    nás</a>
+                <a href="#story" class="nav-item nav-link" data-toggle="collapse"
+                    data-target=".navbar-collapse.show">Náš příběh</a>
+            </div>
             <div class="navbar-nav py-0">
-                <a href="#home" class="navbar-brand d-block d-lg-none" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a href="#home" class="navbar-brand mx-5 d-none d-lg-block">
                     <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
                 </a>
             </div>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between pt-3 pt-lg-0" id="navbarCollapse">
-                <div class="navbar-nav py-0 d-none d-lg-block invisible">
-                    <a href="./de" class="nav-item nav-link">DE</a>
-                </div>
-                <div class="navbar-nav ml-auto py-0">
-                    <a href="#about" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">O nás</a>
-                    <a href="#story" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Náš příběh</a>
-                </div>
-                <div class="navbar-nav py-0">
-                    <a href="#home" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="font-secondary text-white mb-n2">Poslední svatba</h1>
+            <div class="navbar-nav mr-auto py-0">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        O svatbě
                     </a>
-                </div>
-                <div class="navbar-nav mr-auto py-0">
-                    <div class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                            O svatbě
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#obrad" data-toggle="collapse" data-target=".navbar-collapse.show">Obřad</a>
-                            <a class="dropdown-item" href="#oslava" data-toggle="collapse" data-target=".navbar-collapse.show">Oslava</a>
-                            <a class="dropdown-item" href="#doprava" data-toggle="collapse" data-target=".navbar-collapse.show">Doprava</a>
-                            <!-- <a class="dropdown-item" href="#harmonogram">Harmonogram</a> -->
-                            <a class="dropdown-item" href="#dresscode" data-toggle="collapse" data-target=".navbar-collapse.show">Dress code</a>
-                            <a class="dropdown-item" href="#dary" data-toggle="collapse" data-target=".navbar-collapse.show">Svatební dary</a>
-                            <!-- <a class="dropdown-item" href="#menu">Menu</a> -->
-                        </div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#obrad" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Obřad</a>
+                        <a class="dropdown-item" href="#oslava" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Oslava</a>
+                        <a class="dropdown-item" href="#doprava" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Doprava</a>
+                        <!-- <a class="dropdown-item" href="#harmonogram">Harmonogram</a> -->
+                        <a class="dropdown-item" href="#dresscode" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Dress code</a>
+                        <a class="dropdown-item" href="#dary" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Svatební dary</a>
+                        <!-- <a class="dropdown-item" href="#menu">Menu</a> -->
                     </div>
-                    <a href="#photos" class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Fotky</a>
                 </div>
-                <div class="navbar-nav py-0">
-                    <a href="./de" class="nav-item nav-link"> 🌐 DE </a>
-                </div>
+                <a href="#photos" class="nav-item nav-link" data-toggle="collapse"
+                    data-target=".navbar-collapse.show">Fotografie</a>
             </div>
-        </nav>
-        <!-- Navbar End -->
+            <div class="navbar-nav py-0">
+                <a href="./de" class="nav-item nav-link"> 🌐 DE </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-        <!-- Carousel Start -->
-        <div class="container-fluid p-0" id="home">
-            <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px">
-                        <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover" />
-                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                            <div class="p-3" style="max-width: 900px">
-                                <h1 class="display-1 font-secondary text-white mt-n3 mb-4">
-                                    Julie <span class="text-primary">&</span><span style="font-size: 4.5rem">&nbsp;</span>Adam
-                                </h1>
-                                <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                    <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px">Šťastně až do smrti</h3>
-                                </div>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover" />
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-4">
+                                Julie <span class="text-primary">&</span><span
+                                    style="font-size: 4.5rem">&nbsp;</span>Adam
+                            </h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0"
+                                    style="letter-spacing: 2px">
+                                    Šťastně až do smrti
+                                </h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
+    </div>
 
-<!-- About Start -->
-<div class="container-fluid py-5 bg-beige" id="thanks">
-    <div class="container">
-        <div class="section-title position-relative text-center">
-            <h1 class="font-secondary display-4">Děkujeme</h1>
+    <div class="container-fluid py-5 bg-beige" id="thanks">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Děkujeme</h1>
+            </div>
+            <div class="m-0">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p>
+                            Všem hostům moc děkujeme za krásná přání, objetí a dary. Byl to
+                            opravdu nezapomenutelný víkend a jsme moc rádi, že jsme ho mohli
+                            strávit právě s Vámi. Líp už jsme to naše ŠŤASTNĚ AŽ DO SMRTI
+                            začít ani nemohli.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row m-0">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <p>
-                            Všem hostům moc děkujeme za krásná přání, objetí a dary. Byl to opravdu nezapomenutelný víkend a jsme moc rádi, že jsme ho mohli strávit právě s Vámi. Líp už jsme to naše ŠŤASTNĚ AŽ DO SMRTI začít ani nemohli.
-                    </p>
+    </div>
+
+    <div class="container-fluid py-5 bg-beige" id="photos">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Fotografie</h1>
+            </div>
+            <div class="m-0">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p style="overflow: hidden;">
+                            Fotografie ze svatby jsou k dispozici na tomto odkazu:
+                            <a class="" href="https://photos.app.goo.gl/fEc7E5nGvXbzkMNA6">https://photos.app.goo.gl/fEc7E5nGvXbzkMNA6</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -123,344 +152,353 @@
             </div>
         </div>
     </div>
-</div>
-<!-- About End -->
-        <!-- About Start -->
-        <div class="container-fluid py-5 bg-beige" id="about">
-            <div class="container">
-                <div class="section-title position-relative text-center">
-                    <h1 class="font-secondary display-4">O nás dvou</h1>
+
+    <div class="container-fluid py-5 bg-beige" id="about">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">O nás dvou</h1>
+            </div>
+            <div class="row m-0 mb-4 mb-lg-0 pb-5 pb-md-0">
+                <div class="col-md-8 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center px-md-5">
+                        <h3 class="mb-3 text-left">Ženich</h3>
+                        <p class="text-justify">
+                            Jsem duší nadšenec do programování a když mě to chytne, tak má i
+                            Jůla problém dostat mě od počítače. Pořádnou procházkou, spaním
+                            pod hvězdami nebo hezkými kopečky ale nepohrdnu nikdy. V našem
+                            vztahu funguji jako šofér, koordinátor a komik s nevtipnými
+                            vtipy.
+                        </p>
+                    </div>
                 </div>
-                <div class="row m-0 mb-4 mb-lg-0 pb-5 pb-md-0">
-                    <div class="col-md-8 p-0 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center px-md-5">
-                            <h3 class="mb-3 text-left">Ženich</h3>
-                            <p class="text-justify">
-                                Jsem duší nadšenec do programování a když mě to chytne, tak má i Jůla problém dostat mě od počítače. Pořádnou
-                                procházkou, spaním pod hvězdami nebo hezkými kopečky ale nepohrdnu nikdy. V našem vztahu funguji jako šofér,
-                                koordinátor a komik s nevtipnými vtipy.
+                <div class="col-md-4 p-0 text-center">
+                    <img class="rounded-circle w-75" src="img/adam.jpg" style="object-fit: cover" />
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-8 p-0 text-center text-md-left order-md-1">
+                    <div class="h-100 d-flex flex-column justify-content-center px-md-5">
+                        <h3 class="mb-3">Nevěsta</h3>
+                        <p class="text-justify">
+                            Vrchní nákupčí letenek, téměř profi zahradnice, hlavní
+                            dodavatelka léčivých látek, tlumočnice, občasný zdroj zábavy -
+                            to jsou mé nejdůležitější role u nás doma. Stejně jako Adam, ani
+                            já si nenechám ujít příležitost útéct do přírody, pokud to tedy
+                            není na kole.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0 text-center">
+                    <img class="rounded-circle w-75" src="img/julie.jpg" style="object-fit: cover" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Náš příběh</h1>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
+                        <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-1.jpg" alt="" />
+                    </div>
+                    <div class="col-md-6 order-2 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Začátek</h4>
+                            <p class="text-uppercase mb-2">18. září 2013</p>
+                            <p class="m-0">
+                                Naše společné dobrodružství začalo na třídním výletě do
+                                Švédska. Nikdo by tenkrát neřekl, co se z toho vyvine.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4 p-0 text-center">
-                        <img class="rounded-circle w-75" src="img/adam.jpg" style="object-fit: cover" />
-                    </div>
                 </div>
-                <div class="row m-0">
-                    <div class="col-md-8 p-0 text-center text-md-left order-md-1">
-                        <div class="h-100 d-flex flex-column justify-content-center px-md-5">
-                            <h3 class="mb-3">Nevěsta</h3>
-                            <p class="text-justify">
-                                Vrchní nákupčí letenek, téměř profi zahradnice, hlavní dodavatelka léčivých látek, tlumočnice, občasný zdroj zábavy -
-                                to jsou mé nejdůležitější role u nás doma. Stejně jako Adam, ani já si nenechám ujít příležitost útéct do přírody,
-                                pokud to tedy není na kole.
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Gymnázium</h4>
+                            <p class="text-uppercase mb-2">2013 - 2017</p>
+                            <p class="m-0">
+                                Čtyři roky jsme spolu strávili v jedné třídě. Viděli jsme se
+                                každý den a společně došli až k maturitě.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4 p-0 text-center">
-                        <img class="rounded-circle w-75" src="img/julie.jpg" style="object-fit: cover" />
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid mt-3 mt-md-0 ml-md-3" src="img/story-2.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
+                        <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-3.jpg" alt="" />
+                    </div>
+                    <div class="col-md-6 order-2 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Univerzita</h4>
+                            <p class="text-uppercase mb-2">2017 - 2022</p>
+                            <p class="m-0">
+                                Po maturitě se naše cesty rozdělily a každý jsme šli studovat
+                                jinam. Adam do Prahy, Julie do Berlína, a tak se z toho stal
+                                vztah na dálku. Jak Covid mnoho lidí rozdělil, nám umožnil to,
+                                že jsme se poslední roky studia viděli mnohem více a častěji.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Společné bydlení</h4>
+                            <p class="text-uppercase mb-2">1. dubna 2023</p>
+                            <p class="m-0">
+                                Potom, co jsme oba skončili se studiem a deset let vztahu měli
+                                za sebou, konečně jsme spolu sestěhovali. Usadili jsme se v
+                                německých Drážďanech.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid mt-3 mt-md-0 ml-md-3" src="img/story-4.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
+                        <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-5.jpg" alt="" />
+                    </div>
+                    <div class="col-md-6 order-2 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Zásnuby</h4>
+                            <p class="text-uppercase mb-2">24. listopadu 2023</p>
+                            <p class="m-0">
+                                Při naší velké cestě po Asii, jsme se zasnoubili na thajském
+                                ostrově Ko Chang.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+    <!-- Story End -->
 
-        <!-- Story Start -->
-        <div class="container-fluid py-5" id="story">
-            <div class="container">
-                <div class="section-title position-relative text-center">
-                    <h1 class="font-secondary display-4">Náš příběh</h1>
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">O svatbě</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p>
+                        Svatbu jsme se rozhodli uspořádat v užším kruhu rodiny a přátel, v
+                        místech, kam nás zavedl nespočet výletů a kde to máme moc rádi.
+                        Budeme se moc těšit, když tento jedinečný den v tomto nádherném
+                        prostředí strávíte s námi.
+                    </p>
+                    <p>
+                        Podrobnější informace k svatbě bude postupně doplňovat. Určitě se
+                        tu ještě objeví přesný čas obřadu a harmonogram. Po svatbě tu
+                        čekejte i fotogalerii.
+                    </p>
                 </div>
-                <div class="container timeline position-relative p-0">
-                    <div class="row">
-                        <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
-                            <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-1.jpg" alt="" />
-                        </div>
-                        <div class="col-md-6 order-2 text-center text-md-left">
-                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                                <h4 class="mb-2">Začátek</h4>
-                                <p class="text-uppercase mb-2">18. září 2013</p>
-                                <p class="m-0">
-                                    Naše společné dobrodružství začalo na třídním výletě do Švédska. Nikdo by tenkrát neřekl, co se z toho vyvine.
-                                </p>
-                            </div>
-                        </div>
+            </div>
+            <div id="obrad" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Obřad</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 border-right border-primary">
+                    <div class="text-center">
+                        <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
+                        <p class="">Skalní věž Lomový masiv, Tisá</p>
+                        <a href="https://mapy.cz/s/dusogemaga" target="_blank" class="d-block">50.7800475N,
+                            14.0466758E</a>
+
+                        <i class="fa fa-2x fa-calendar-alt my-3"></i>
+                        <p class="">31. srpna 2024</p>
+                        <p class="">cca 13:00 (bude upřesněno)</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-right">
-                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                                <h4 class="mb-2">Gymnázium</h4>
-                                <p class="text-uppercase mb-2">2013 - 2017</p>
-                                <p class="m-0">
-                                    Čtyři roky jsme spolu strávili v jedné třídě. Viděli jsme se každý den a společně došli až k maturitě.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-center text-md-left">
-                            <img class="img-fluid mt-3 mt-md-0 ml-md-3" src="img/story-2.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
-                            <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-3.jpg" alt="" />
-                        </div>
-                        <div class="col-md-6 order-2 text-center text-md-left">
-                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                                <h4 class="mb-2">Univerzita</h4>
-                                <p class="text-uppercase mb-2">2017 - 2022</p>
-                                <p class="m-0">
-                                    Po maturitě se naše cesty rozdělily a každý jsme šli studovat jinam. Adam do Prahy, Julie do Berlína, a tak se z
-                                    toho stal vztah na dálku. Jak Covid mnoho lidí rozdělil, nám umožnil to, že jsme se poslední roky studia viděli
-                                    mnohem více a častěji.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-right">
-                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                                <h4 class="mb-2">Společné bydlení</h4>
-                                <p class="text-uppercase mb-2">1. dubna 2023</p>
-                                <p class="m-0">
-                                    Potom, co jsme oba skončili se studiem a deset let vztahu měli za sebou, konečně jsme spolu sestěhovali. Usadili
-                                    jsme se v německých Drážďanech.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-center text-md-left">
-                            <img class="img-fluid mt-3 mt-md-0 ml-md-3" src="img/story-4.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 order-3 order-md-1 text-center text-md-right">
-                            <img class="img-fluid mt-3 mt-md-0 mr-md-3" src="img/story-5.jpg" alt="" />
-                        </div>
-                        <div class="col-md-6 order-2 text-center text-md-left">
-                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                                <h4 class="mb-2">Zásnuby</h4>
-                                <p class="text-uppercase mb-2">24. listopadu 2023</p>
-                                <p class="m-0">Při naší velké cestě po Asii, jsme se zasnoubili na thajském ostrově Ko Chang.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-6 col-lg-5 text-center mt-3 mt-md-0">
+                    <iframe class="w-100 h-100" style="border: none; min-height: 250px"
+                        src="https://frame.mapy.cz/s/gureforezo" width="400" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div id="oslava" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Oslava</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 order-3 order-md-1 mt-3 mt-md-0 text-center border-right border-primary">
+                    <iframe class="w-100 h-100" style="border: none; min-height: 250px"
+                        src="https://frame.mapy.cz/s/lefanusoba" width="400" height="400" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-6 col-lg-5 order-2">
+                    <div class="text-center">
+                        <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
+                        <p class="">Country House</p>
+                        <a class="d-block" href="https://mapy.cz/s/fohovuseno" target="_blank">Tisá 538, 40336 Tisá</a>
+                        <i class="fa fa-2x fa-calendar-alt my-3"></i>
+                        <p class="">31. srpna 2024</p>
+                        <p class="">cca 14:00 (bude upřesněno)</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Story End -->
-
-        <!-- Event Start -->
-        <div class="container-fluid py-5" id="event">
-            <div class="container">
-                <div class="section-title position-relative text-center">
-                    <h1 class="font-secondary display-4">O svatbě</h1>
+            <div id="ubytovani" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Ubytování</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 order-3 order-lg-1 p-0 text-center px-5 px-lg-3">
+                    <img class="w-100 h-100" src="img/ubytovani.jpg" style="object-fit: cover" />
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
+                <div class="col-lg-6 order-2 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center px-3 px-md-5 text-justify pb-3">
                         <p>
-                            Svatbu jsme se rozhodli uspořádat v užším kruhu rodiny a přátel, v místech, kam nás zavedl nespočet výletů a kde to máme
-                            moc rádi. Budeme se moc těšit, když tento jedinečný den v tomto nádherném prostředí strávíte s námi.
+                            Místo oslavy je zároveň i naším ubytováním. Objekt jsme si
+                            pronajali na celý víkend a všem hostům můžeme nabídnout nocleh
+                            od pátečního večera až do nedělního dopoledne. V okolí Tisé jsou
+                            nádherná místa, takže se zajisté vyplatí dorazit dříve a udělat
+                            si procházku po okolí. Abychom věděli s kým a na jakou dobu máme
+                            počítat, dejte nám prosím dole vědět, zda se chystáte možnost
+                            ubytování využít.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="doprava" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Doprava</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center px-3 px-md-5 text-justify pb-3">
+                        <p>
+                            Resort Tisá nabízí pár parkovacích míst přímo před chatou, další
+                            velké parkoviště se nachází na louce za objektem. Kdybyste
+                            potřebovali pomoct nebo poradit s dopravou na místo, neváhejte
+                            se nám ozvat.
                         </p>
                         <p>
-                            Podrobnější informace k svatbě bude postupně doplňovat. Určitě se tu ještě objeví přesný čas obřadu a harmonogram. Po
-                            svatbě tu čekejte i fotogalerii.
+                            Na místo obřadu se dostaneme společně auty od našeho ubytování.
+                            Zaparkujeme v místě vyznačeném na mapě a odtud se vydáme 700 m
+                            pěšky lesní cestou na místo obřadu.
                         </p>
                     </div>
                 </div>
-                <div id="obrad" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Obřad</h3>
+                <div class="col-lg-4 px-5 px-lg-3 text-center">
+                    <iframe class="w-100 h-100" style="border: none; min-height: 250px"
+                        src="https://frame.mapy.cz/s/kagafarava" width="400" height="400" frameborder="0"></iframe>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 border-right border-primary">
-                        <div class="text-center">
-                            <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
-                            <p class="">Skalní věž Lomový masiv, Tisá</p>
-                            <a href="https://mapy.cz/s/dusogemaga" target="_blank" class="d-block">50.7800475N, 14.0466758E</a>
+            </div>
+            <div id="dresscode" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Dress code</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="">
+                        Celou svatbu se budeme snažit ladit do těchto barev - krémová,
+                        světle hnědá, olivová zelená, eukalyptová zelená.
+                    </p>
+                    <div class="row my-3 px-md-5">
+                        <div class="col-6 col-lg p-3">
+                            <div class="mx-auto rounded-circle shadow-box"
+                                style="width: 80px; height: 80px; background-color: #f9f7e8"></div>
+                        </div>
+                        <div class="col-6 col-lg p-3">
+                            <div class="mx-auto rounded-circle shadow-box"
+                                style="width: 80px; height: 80px; background-color: #bb956f"></div>
+                        </div>
+                        <div class="col-6 col-lg p-3">
+                            <div class="mx-auto rounded-circle shadow-box"
+                                style="width: 80px; height: 80px; background-color: #728064"></div>
+                        </div>
+                        <div class="col-6 col-lg p-3">
+                            <div class="mx-auto rounded-circle shadow-box"
+                                style="width: 80px; height: 80px; background-color: #97ad9c"></div>
+                        </div>
+                    </div>
+                    <p class="">
+                        Oblečte se ale tak, abyste se cítili krásně a pohodlně.
+                        Přizpůsobte však oděv a obuv lesní procházce a nechejte své
+                        střevíce a smokingy doma.
+                    </p>
+                </div>
+            </div>
 
-                            <i class="fa fa-2x fa-calendar-alt my-3"></i>
-                            <p class="">31. srpna 2024</p>
-                            <p class="">cca 13:00 (bude upřesněno)</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 text-center mt-3 mt-md-0">
-                        <iframe
-                            class="w-100 h-100"
-                            style="border: none; min-height: 250px"
-                            src="https://frame.mapy.cz/s/gureforezo"
-                            width="400"
-                            height="400"
-                            frameborder="0"
-                        ></iframe>
-                    </div>
-                </div>
-                <div id="oslava" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Oslava</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 order-3 order-md-1 mt-3 mt-md-0 text-center border-right border-primary">
-                        <iframe
-                            class="w-100 h-100"
-                            style="border: none; min-height: 250px"
-                            src="https://frame.mapy.cz/s/lefanusoba"
-                            width="400"
-                            height="400"
-                            frameborder="0"
-                        ></iframe>
-                    </div>
-                    <div class="col-md-6 col-lg-5 order-2">
-                        <div class="text-center">
-                            <i class="fa fa-2x fa-map-marker-alt mb-3"></i>
-                            <p class="">Country House</p>
-                            <a class="d-block" href="https://mapy.cz/s/fohovuseno" target="_blank">Tisá 538, 40336 Tisá</a>
-                            <i class="fa fa-2x fa-calendar-alt my-3"></i>
-                            <p class="">31. srpna 2024</p>
-                            <p class="">cca 14:00 (bude upřesněno)</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="ubytovani" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Ubytování</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 order-3 order-lg-1 p-0 text-center px-5 px-lg-3">
-                        <img class="w-100 h-100" src="img/ubytovani.jpg" style="object-fit: cover" />
-                    </div>
-                    <div class="col-lg-6 order-2 p-0 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center px-3 px-md-5 text-justify pb-3">
-                            <p>
-                                Místo oslavy je zároveň i naším ubytováním. Objekt jsme si pronajali na celý víkend a všem hostům můžeme nabídnout
-                                nocleh od pátečního večera až do nedělního dopoledne. V okolí Tisé jsou nádherná místa, takže se zajisté vyplatí
-                                dorazit dříve a udělat si procházku po okolí. Abychom věděli s kým a na jakou dobu máme počítat, dejte nám prosím dole
-                                vědět, zda se chystáte možnost ubytování využít.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="doprava" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Doprava</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 p-0 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center px-3 px-md-5 text-justify pb-3">
-                            <p>
-                                Resort Tisá nabízí pár parkovacích míst přímo před chatou, další velké parkoviště se nachází na louce za objektem.
-                                Kdybyste potřebovali pomoct nebo poradit s dopravou na místo, neváhejte se nám ozvat.
-                            </p>
-                            <p>
-                                Na místo obřadu se dostaneme společně auty od našeho ubytování. Zaparkujeme v místě vyznačeném na mapě a odtud se
-                                vydáme 700 m pěšky lesní cestou na místo obřadu.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 px-5 px-lg-3 text-center">
-                        <iframe
-                            class="w-100 h-100"
-                            style="border: none; min-height: 250px"
-                            src="https://frame.mapy.cz/s/kagafarava"
-                            width="400"
-                            height="400"
-                            frameborder="0"
-                        ></iframe>
-                    </div>
-                </div>
-                <div id="dresscode" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Dress code</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <p class="">
-                            Celou svatbu se budeme snažit ladit do těchto barev - krémová, světle hnědá, olivová zelená, eukalyptová zelená.
-                        </p>
-                        <div class="row my-3 px-md-5">
-                            <div class="col-6 col-lg p-3">
-                                <div class="mx-auto rounded-circle shadow-box" style="width: 80px; height: 80px; background-color: #f9f7e8"></div>
-                            </div>
-                            <div class="col-6 col-lg p-3">
-                                <div class="mx-auto rounded-circle shadow-box" style="width: 80px; height: 80px; background-color: #bb956f"></div>
-                            </div>
-                            <div class="col-6 col-lg p-3">
-                                <div class="mx-auto rounded-circle shadow-box" style="width: 80px; height: 80px; background-color: #728064"></div>
-                            </div>
-                            <div class="col-6 col-lg p-3">
-                                <div class="mx-auto rounded-circle shadow-box" style="width: 80px; height: 80px; background-color: #97ad9c"></div>
-                            </div>
-                        </div>
-                        <p class="">
-                            Oblečte se ale tak, abyste se cítili krásně a pohodlně. Přizpůsobte však oděv a obuv lesní procházce a nechejte své
-                            střevíce a smokingy doma.
-                        </p>
-                    </div>
-                </div>
-
-                <div id="dary" class="container-fluid text-center pt-5">
-                    <h3 class="my-3">Svatební dary</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <p class="">Největším darem pro nás bude vaše přítomnost, pokud na tom však trváte, tak prosíme…</p>
-                        <p class="">…nekupujte hrnce ani sklenky raději přispějte na byt či letenky.</p>
-                    </div>
+            <div id="dary" class="container-fluid text-center pt-5">
+                <h3 class="my-3">Svatební dary</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="">
+                        Největším darem pro nás bude vaše přítomnost, pokud na tom však
+                        trváte, tak prosíme…
+                    </p>
+                    <p class="">
+                        …nekupujte hrnce ani sklenky raději přispějte na byt či letenky.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- Event End -->
+    </div>
+    <!-- Event End -->
 
-        <!-- RSVP Start -->
-        <div class="d-none container-fluid py-5" id="rsvp">
-            <div class="container">
-                <div class="section-title position-relative text-center">
-                    <h1 class="font-secondary display-4">Dejte nám vědět</h1>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <p class="">
-                            Rádi bychom, a Vy zajisté také, aby v den svatby vše probíhalo hladce. Zodpovězte prosím pár následujících krátkých dotazů
-                            a pomozte nám tak s přípravou svatby.
-                        </p>
-                        <p>Děkujeme a těšíme se na Vás!</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeHJ8Q3zKLJccSS4lAytOGpUix4uXPCNTH4fBuJ6aNAYPwSNw/viewform?embedded=true"
-                        width="640"
-                        height="625"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
-                        >Načítání…
-                    </iframe>
+    <!-- RSVP Start -->
+    <div class="d-none container-fluid py-5" id="rsvp">
+        <div class="container">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Dejte nám vědět</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="">
+                        Rádi bychom, a Vy zajisté také, aby v den svatby vše probíhalo
+                        hladce. Zodpovězte prosím pár následujících krátkých dotazů a
+                        pomozte nám tak s přípravou svatby.
+                    </p>
+                    <p>Děkujeme a těšíme se na Vás!</p>
                 </div>
             </div>
-        </div>
-        <!-- RSVP End -->
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white py-3" id="contact">
-            <div class="container text-center">
-                <div class="position-relative text-center">
-                    <h1 class="font-secondary text-white">Děkujeme</h1>
-                    <!-- <i class="far fa-heart text-white"></i> -->
-                </div>
+            <div class="row justify-content-center">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeHJ8Q3zKLJccSS4lAytOGpUix4uXPCNTH4fBuJ6aNAYPwSNw/viewform?embedded=true"
+                    width="640" height="625" frameborder="0" marginheight="0" marginwidth="0">Načítání…
+                </iframe>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- RSVP End -->
 
-        <!-- Scroll to Bottom -->
-        <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-3" id="contact">
+        <div class="container text-center">
+            <div class="position-relative text-center">
+                <h1 class="font-secondary text-white">Děkujeme</h1>
+                <!-- <i class="far fa-heart text-white"></i> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-        <!-- Back to Top -->
-        <!-- <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
-        <!-- <script src="lib/isotope/isotope.pkgd.min.js"></script> -->
-        <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="lib/isotope/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
